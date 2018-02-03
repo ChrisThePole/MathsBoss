@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: Adobe (2018) Adobe PhoneGap Build. [Online] Available at: https://build.phonegap.com/docs/config-xml. [Accessed 3rd February 2018].-->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "mob.app.dev.lifecycle"
+        version   = "1.0.0">
+
+    <name>Chris' App</name>
+
+    <description>
+        A maths learning tool.
+    </description>
+
+    <author>
+        Christopher Hewlett
+    </author>
+
+    <preference name="phonegap-version" value="cli-7.0.1" />
+	
+    <preference name="permissions"                value="none"/>   
+	
+	<access origin="*"/>
+   	<plugin name="cordova-plugin-whitelist" version="1" />
+	<plugin name="cordova-plugin-dialogs" version="1" />
+	<plugin name="cordova-plugin-vibration" version="1" />
+</widget>
