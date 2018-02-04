@@ -1,6 +1,31 @@
-/*$(document).on("pagecreate","#pageone",function(){
+$(document).on("pagecreate","#pageone",function(){
   
-  	$("#MenuButton1").load("#AdditionMenu");  
+  	$("#MenuExit").click(function(){
+		exitDialog();				
+	});  
 
 
-});*/
+});
+
+function exitDialog() {
+      
+	navigator.notification.confirm(
+    	"Are you sure you want to exit?",  
+        dialogDismissed,        
+        "Exit application",            
+        ['Yes', 'No']                  
+    );
+
+}
+        	
+        	
+        	
+function dialogDismissed(buttonIndex) {
+	
+	if(buttonIndex==1) {
+		window.close;
+		new Toast({content: "Gotta love maccies!", duration: 3000});
+	} else if {
+		(buttonIndex==2) new Toast({content: "Cancelled", duration: 3000});
+
+}

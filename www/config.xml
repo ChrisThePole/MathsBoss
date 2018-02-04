@@ -6,7 +6,7 @@
         id        = "mob.app.dev.lifecycle"
         version   = "1.0.0">
 
-    <name>Chris' App</name>
+    <name>MathsBoss</name>
 
     <description>
         A maths learning tool.
