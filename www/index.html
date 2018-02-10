@@ -14,9 +14,10 @@
 
 <body>
   
-<div data-role="page" id="Menu">
+<div data-role="page" id="Menu"> <!--This div contains the main menu page-->
   <div data-role="header">
-    <h1>Menu</h1>
+   <button id="MenuExit" style="background-color: red; color: whitesmoke;">Exit</button> <h1>Menu</h1>
+	 	<!--Button that allows the user to exit the app--> 
   </div>
 
   <div data-role="main" class="ui-content">
@@ -26,35 +27,30 @@
     	<button id="MenuButton2" style="background-color: lightblue;">Subtraction</button>
     	<button id="MenuButton3" style="background-color: lightblue;">Multiplication</button>
 	  	<button id="MenuButton4" style="background-color: lightblue;">Division</button>
-	  		<br><br>
-	  	<button id="MenuExit" style="background-color: red; color: whitesmoke;">Exit</button>
-	 
- 
+	  	<!--Buttons to select the maths topic area to answer questions on-->
+	  
   </div>
-  
-  
-
   <div data-role="footer">
 
   </div>
 </div>
 	
-<div data-role="page" id="AdditionMenu">
+
+
+<div data-role="page" id="AdditionMenu"> <!--This div contains the addition menu page-->
   <div data-role="header">
     <h1>Addition</h1>
   </div>
 
   <div data-role="main" class="ui-content">
-	  	<h2 style="color: black; text-align: center;">Choose a Difficulty</h2>
+	  	<h2 style="color: black; text-align: center;">Are you ready?</h2>
   
-		<button id="AddEasyButton" style="background-color: lightblue;">Easy</button>
-    	<button id="AddMediumButton" style="background-color: lightblue;">Medium</button>
-    	<button id="AddHardButton" style="background-color: lightblue;">Hard</button>
- 
+		<button id="AddStartButton" style="background-color: lightblue;">Start Questions</button>
+    	<!--Button to start the addition questions-->
+	  		<br><br>
+	  	<button id="AddMenuExit" style="background-color: red; color: whitesmoke;">Return to Main Menu</button>
+ 		<!--Button that allows the user to return to the main menu page-->
   </div>
-  
-  
-
   <div data-role="footer">
 
   </div>
