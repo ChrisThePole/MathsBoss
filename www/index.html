@@ -23,7 +23,7 @@
   <div data-role="main" class="ui-content">
 	  	<h2 style="color: black; text-align: center;">Choose a Topic to Practise</h2>
   
-	  	<button id="MenuButton1" style="background-color: lightblue;"><a href="#AdditionMenu" style="color: black;">Addition</a></button>
+	  	<button id="MenuButton1" onclick="window.location.href='#AdditionMenu'" style="background-color: lightblue;">Addition</button>
     	<button id="MenuButton2" style="background-color: lightblue;">Subtraction</button>
     	<button id="MenuButton3" style="background-color: lightblue;">Multiplication</button>
 	  	<button id="MenuButton4" style="background-color: lightblue;">Division</button>
@@ -39,7 +39,8 @@
 
 <div data-role="page" id="AdditionMenu"> <!--This div contains the addition menu page-->
   <div data-role="header">
-    <h1>Addition</h1>
+   <button id="AddMenuExit" style="background-color: red; color: whitesmoke;">Return to Main Menu</button>
+ 		<!--Button that allows the user to return to the main menu page--> <h1>Addition</h1>
   </div>
 
   <div data-role="main" class="ui-content">
@@ -47,9 +48,6 @@
   
 		<button id="AddStartButton" style="background-color: lightblue;">Start Questions</button>
     	<!--Button to start the addition questions-->
-	  		<br><br>
-	  	<button id="AddMenuExit" style="background-color: red; color: whitesmoke;">Return to Main Menu</button>
- 		<!--Button that allows the user to return to the main menu page-->
   </div>
   <div data-role="footer">
 

@@ -1,4 +1,4 @@
-$(document).on("pagecreate","#pageone",function(){
+/*$(document).on("pagecreate","#pageone",function(){
   
   	$("#MenuExit").on("click", (function(){
 		exitDialog();				
@@ -28,4 +28,4 @@ function dialogDismissed(buttonIndex) {
 	} else if {
 		(buttonIndex==2) new Toast({content: "Cancelled", duration: 3000});
 
-}
+}*/
