@@ -22,11 +22,7 @@ function exitDialog() {
 function dialogDismissed(buttonIndex) {
 	if(buttonIndex==1) {
 		navigator.app.exitApp();
-		//window.close();
-		//new Toast({content: "Exit Successful", duration: 3000});
-	} /*else if (buttonIndex==2) {
-		new Toast({content: "Cancelled", duration: 3000});
-}*/
+	} 
 }
 /*Function that closes the app if the user confirms they wish to exit
 and displays a toat message which confirms their choice*/
