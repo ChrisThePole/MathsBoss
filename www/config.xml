@@ -26,5 +26,5 @@
 	
 	<plugin name="cordova-plugin-vibration" version="1"/> <!--Apache Cordova (2018) Vibration - Apache Cordova. [Online] Available at: https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-vibration/. [Accessed 26th February 2018].-->
 	
-	<plugin name="cordova-plugin-brightness" version="1"/> <!--Adobe PhoneGap Build (2018) Adobe PhoneGap Build – Brightness Plugin. [Online] Available at: https://build.phonegap.com/plugins/3757. [Accessed 26th February 2018].-->
+	<plugin name="cordova.plugin.c22.brightness" spec="0.1.0" source="pgb" /> <!--Adobe PhoneGap Build (2018) Adobe PhoneGap Build – Brightness Plugin. [Online] Available at: https://build.phonegap.com/plugins/3757. [Accessed 26th February 2018].-->
 </widget>
