@@ -21,7 +21,10 @@
     <preference name="permissions"                value="none"/>   
 	
 	<access origin="*"/>
-   	<plugin name="cordova-plugin-whitelist" version="1" />
-	<plugin name="cordova-plugin-dialogs" version="1" />
-	<plugin name="cordova-plugin-vibration" version="1" />
+	
+	<plugin name="cordova-plugin-dialogs" version="1"/> <!--Apache Cordova (2018) Dialogs - Apache Cordova. [Online] Available at: https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-dialogs/. [Accessed 26th February 2018].-->
+	
+	<plugin name="cordova-plugin-vibration" version="1"/> <!--Apache Cordova (2018) Vibration - Apache Cordova. [Online] Available at: https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-vibration/. [Accessed 26th February 2018].-->
+	
+	<plugin name="cordova-plugin-brightness" version="1"/> <!--Adobe PhoneGap Build (2018) Adobe PhoneGap Build – Brightness Plugin. [Online] Available at: https://build.phonegap.com/plugins/3757. [Accessed 26th February 2018].-->
 </widget>

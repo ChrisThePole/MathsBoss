@@ -26,3 +26,8 @@ function dialogDismissed(buttonIndex) {
 }
 /*Function that closes the app if the user confirms they wish to exit
 and displays a toat message which confirms their choice*/
+
+
+function PowerSaving(){
+	
+}
