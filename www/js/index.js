@@ -1,12 +1,3 @@
-/*$(document).on("pagecreate","#pageone",function(){
-  	$("#MenuExit").on("click", (function(){
-		//exitDialog();
-		window.alert("Menu Exit Button Test");
-	}))  
-})*/
-//Function that calls the "exitDialog()" function when the "MenuExit" button is pressed
-			
-			   
 function exitDialog() {
 	navigator.notification.confirm(
     	"Are you sure you want to exit?",  
@@ -28,6 +19,14 @@ function dialogDismissed(buttonIndex) {
 and displays a toat message which confirms their choice*/
 
 
-function PowerSaving(){
-	
-}
+function getBrightnessPlugin() {
+			window.brightness = cordova.require("cordova.plugin.Brightness.Brightness");
+		}
+		function powerSaving(value) {
+			// value should be float in range from 0 to 1.
+			brightness.powerSaving(value);
+		}
+		function getBrightness() {
+			// win([-1,0-1]) float 0-1 is a brightness level, -1 represents a system default
+			brightness.getBrightness(value);
+		}

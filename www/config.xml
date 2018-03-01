@@ -26,5 +26,5 @@
 	
 	<plugin name="cordova-plugin-vibration" version="1"/> <!--Apache Cordova (2018) Vibration - Apache Cordova. [Online] Available at: https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-vibration/. [Accessed 26th February 2018].-->
 	
-	<plugin spec="https://github.com/fiscal-cliff/phonegap-plugin-brightness.git" source="git"/>
+	<plugin spec="https://github.com/fiscal-cliff/phonegap-plugin-brightness.git" source="git"/> <!--Fiscal-Cliff (2018) GitHub - fiscal-cliff/phonegap-plugin-brightness: A phonegap 3.x plugin for brightness control within android and ios. [Online] Available at: https://github.com/fiscal-cliff/phonegap-plugin-brightness. [Accessed 1st March 2018].-->
 </widget>
