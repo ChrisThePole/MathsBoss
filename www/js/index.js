@@ -21,12 +21,16 @@ and displays a toat message which confirms their choice*/
 
 function getBrightnessPlugin() {
 			window.brightness = cordova.require("cordova.plugin.Brightness.Brightness");
+			powerSaving(1); 
 		}
 		function powerSaving(value) {
-			// value should be float in range from 0 to 1.
 			brightness.powerSaving(value);
 		}
+
+		$(document).on("click","power", function(){
+			powerSaving(0);
+		})
+
 		function getBrightness() {
-			// win([-1,0-1]) float 0-1 is a brightness level, -1 represents a system default
-			brightness.getBrightness(value);
+			brightness.powerSaving(value);
 		}
