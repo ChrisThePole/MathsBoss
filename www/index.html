@@ -42,7 +42,7 @@
 
 <div data-role="page" id="AdditionMenu"> <!--This div contains the addition menu page-->
   <div data-role="header">
-   <button id="AddMenuExit" onclick="window.location.href='#Menu'" style="background-color: red; color: whitesmoke;">Main Menu</button>
+   <button class="MenuExit" onclick="window.location.href='#Menu'" style="background-color: red; color: whitesmoke;">Main Menu</button>
  		<!--Button that allows the user to return to the main menu page--> 
 	  <h1>Addition</h1>
    <button class="power" style="background-color: green; color: whitesmoke;">Power Saving</button>
@@ -52,14 +52,63 @@
   <div data-role="main" class="ui-content">
 	  	<h2 style="color: black; text-align: center;">Are you ready?</h2>
   
-		<button id="AddStartButton" style="background-color: lightblue;">Start Questions</button>
+		<button id="AddStartButton" onclick="window.location.href='#AdditionQ1'" style="background-color: lightblue;">Start Questions</button>
     	<!--Button to start the addition questions-->
   </div>
   <div data-role="footer">
 
   </div>
 </div>	
+
 	
+
+<div data-role="page" id="AdditionQ1"> <!--This div contains the page for Addition Question 1-->
+  <div data-role="header">
+   <button class="MenuExit" onclick="window.location.href='#Menu'" style="background-color: red; color: whitesmoke;">Main Menu</button>
+ 		<!--Button that allows the user to return to the main menu page--> 
+	  <h1>Quesiton 1</h1>
+   <button class="power" style="background-color: green; color: whitesmoke;">Power Saving</button>
+	  <!--Button that allows the user to lower the screen brightness, thus saving battery power-->
+  </div>
+
+  <div data-role="main" class="ui-content">
+	  	<h2 style="color: black; text-align: center;">What is 140 + 180?</h2>
+  
+		<button id="AddQ1Op1" style="background-color: lightblue;"></button>
+	  	<button id="AddQ1Op2" style="background-color: lightblue;"></button>
+	  	<button id="AddQ1Op3" style="background-color: lightblue;"></button>
+	  	<button id="AddQ1Op4" style="background-color: lightblue;"></button>
+    	<!--Buttons to answer addition question 1-->
+  </div>
+  <div data-role="footer">
+
+  </div>
+</div>	
 	
+
+
+<div data-role="page" id="AdditionQ2"> <!--This div contains the page for Addition Question 1-->
+  <div data-role="header">
+   <button class="MenuExit" onclick="window.location.href='#Menu'" style="background-color: red; color: whitesmoke;">Main Menu</button>
+ 		<!--Button that allows the user to return to the main menu page--> 
+	  <h1>Quesiton 1</h1>
+   <button class="power" style="background-color: green; color: whitesmoke;">Power Saving</button>
+	  <!--Button that allows the user to lower the screen brightness, thus saving battery power-->
+  </div>
+
+  <div data-role="main" class="ui-content">
+	  	<h2 style="color: black; text-align: center;">Question?</h2>
+  
+		<button id="AddQ2Op1" style="background-color: lightblue;">Option1</button>
+	  	<button id="AddQ2Op2" style="background-color: lightblue;">Option2</button>
+	  	<button id="AddQ2Op3" style="background-color: lightblue;">Option3</button>
+	  	<button id="AddQ2Op4" style="background-color: lightblue;">Option4</button>
+    	<!--Buttons to answer addition question 2-->
+  </div>
+  <div data-role="footer">
+
+  </div>
+</div>	
+
 </body>
 </html>
