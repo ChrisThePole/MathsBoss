@@ -52,9 +52,25 @@ var additionQuestions = {
 		}
 	}
 
+
 $(document).on('pageinit', function() { 
 	$("#AddQ1Op1").text(additionQuestions.addQues1.option1);
 	$("#AddQ1Op2").text(additionQuestions.addQues1.option2);
 	$("#AddQ1Op3").text(additionQuestions.addQues1.option3);
 	$("#AddQ1Op4").text(additionQuestions.addQues1.option4);
+})
+
+
+var additionScore = 0;
+
+function addPlusScore(){
+	additionScore++;
+}
+	
+$("#AddQ1Op1").on("tap", function(){ 
+	$(this).css("color", "green");
+	navigator.notification.beep(1); 
+	addPlusScore();
+	$(".addScore").text(additionScore);
+	window.location.href='#AdditionQ2';
 })
