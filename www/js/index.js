@@ -74,3 +74,21 @@ $("#AddQ1Op1").on("tap", function(){
 	$(".addScore").text(additionScore);
 	window.location.href='#AdditionQ2';
 })
+
+$("#AddQ1Op2").on("tap", function(){ 
+	$(this).css("color", "red");
+	navigator.vibrate(2000); 
+	window.location.href='#AdditionQ2';
+})
+
+$("#AddQ1Op3").on("tap", function(){ 
+	$(this).css("color", "red");
+	navigator.vibrate(2000); 
+	window.location.href='#AdditionQ2';
+})
+
+$("#AddQ1Op4").on("tap", function(){ 
+	$(this).css("color", "red");
+	navigator.vibrate(2000); 
+	window.location.href='#AdditionQ2';
+})
