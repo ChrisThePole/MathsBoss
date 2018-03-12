@@ -67,7 +67,6 @@ function addPlusScore(){
 	additionScore++;
 }
 	
-//$("#AddQ1Op1").on("tap", function(){ 
 	function AddQ1Op1() {
 	$("#AddQ1Op1").css("color", "green");
 	navigator.notification.beep(1); 
@@ -75,22 +74,21 @@ function addPlusScore(){
 	$(".addScore").text(additionScore);
 	window.location.href='#AdditionQ2';
 	}
-//})
 
-$("#AddQ1Op2").on("tap", function(){ 
-	$(this).css("color", "red");
+	function AddQ1Op2(){ 
+	$("#AddQ1Op2").css("color", "red");
 	navigator.vibrate(2000); 
 	window.location.href='#AdditionQ2';
-})
+}
 
-$("#AddQ1Op3").on("tap", function(){ 
-	$(this).css("color", "red");
+function AddQ1Op3(){ 
+	$("#AddQ1Op3").css("color", "red");
 	navigator.vibrate(2000); 
 	window.location.href='#AdditionQ2';
-})
+}
 
-$("#AddQ1Op4").on("tap", function(){ 
-	$(this).css("color", "red");
+function AddQ1Op4(){ 
+	$("#AddQ1Op4").css("color", "red");
 	navigator.vibrate(2000); 
 	window.location.href='#AdditionQ2';
-})
+}
