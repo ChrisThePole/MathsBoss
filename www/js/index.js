@@ -67,13 +67,15 @@ function addPlusScore(){
 	additionScore++;
 }
 	
-$("#AddQ1Op1").on("tap", function(){ 
-	$(this).css("color", "green");
+//$("#AddQ1Op1").on("tap", function(){ 
+	function AddQ1Op1() {
+	$("#AddQ1Op1").css("color", "green");
 	navigator.notification.beep(1); 
 	addPlusScore();
 	$(".addScore").text(additionScore);
 	window.location.href='#AdditionQ2';
-})
+	}
+//})
 
 $("#AddQ1Op2").on("tap", function(){ 
 	$(this).css("color", "red");
