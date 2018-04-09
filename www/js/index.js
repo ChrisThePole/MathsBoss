@@ -52,13 +52,27 @@ var additionQuestions = {
 		}
 	}
 
+var additionJSON = JSON.stringify(additionQuestions);
+localStorage.setItem("additionSet", additionJSON);
+//Storing data
 
-$(document).on('pageinit', function() { 
-	$("#AddQ1Op1").text(additionQuestions.addQues1.option1);
+additionGet = localStorage.getItem("additionSet");
+addObj = JSON.parse(additionGet);
+//document.getElementById("AddQ1Op1").innerTEXT = "hello";
+alert (addObj.addQues1.option1);
+	/*$("#AddQ1Op1").text(addObj.addQues1.option1);
 	$("#AddQ1Op2").text(additionQuestions.addQues1.option2);
 	$("#AddQ1Op3").text(additionQuestions.addQues1.option3);
-	$("#AddQ1Op4").text(additionQuestions.addQues1.option4);
-})
+	$("#AddQ1Op4").text(additionQuestions.addQues1.option4);*/
+//Retrieving data
+
+
+//$(document).on('pageinit', function() { 
+	/*$("#AddQ1Op1").text(additionQuestions.addQues1.option1);
+	$("#AddQ1Op2").text(additionQuestions.addQues1.option2);
+	$("#AddQ1Op3").text(additionQuestions.addQues1.option3);
+	$("#AddQ1Op4").text(additionQuestions.addQues1.option4);*/
+//})
 
 
 var additionScore = 0;
