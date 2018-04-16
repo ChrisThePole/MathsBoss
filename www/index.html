@@ -12,7 +12,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body onload="deviceReady()">  
+<body onload="addQuesDeviceReady()"> 
+<!--Calls the "addQuesDeviceReady" function as soon as the page has loaded-->
 <div data-role="page" id="Menu"> <!--This div contains the main menu page-->
   <div data-role="header">
    <button id="MenuExit" onclick="exitDialog()" style="background-color: red; color: whitesmoke;">Exit</button> 
@@ -87,7 +88,7 @@
 	
 
 
-<div data-role="page" id="AdditionQ2"> <!--This div contains the page for Addition Question 1-->
+<div data-role="page" id="AdditionQ2"> <!--This div contains the page for Addition Question 2-->
   <div data-role="header">
    <button class="MenuExit" onclick="window.location.href='#Menu'" style="background-color: red; color: whitesmoke;">Main Menu</button>
  		<!--Button that allows the user to return to the main menu page--> 
@@ -98,13 +99,40 @@
 
   <div data-role="main" class="ui-content">
 	  	<h2>Score: <div class="addScore">0</div> </h2>
+	  	<h2 style="color: black; text-align: center;">If I have £240.35 in my wallet and
+	  	then my friend gives me £320.36, have much do I have?</h2>
+  
+		<button id="AddQ2Op1" onclick="AddQ2Op1()" style="background-color: lightblue;"></button>
+	  	<button id="AddQ2Op2" onclick="AddQ2Op2()" style="background-color: lightblue;"></button>
+	  	<button id="AddQ2Op3" onclick="AddQ2Op3()" style="background-color: lightblue;"></button>
+	  	<button id="AddQ2Op4" onclick="AddQ2Op4()" style="background-color: lightblue;"></button>
+    	<!--Buttons to answer addition question 2-->
+  </div>
+  <div data-role="footer">
+
+  </div>
+</div>	
+
+	
+	
+<div data-role="page" id="AdditionQ3"> <!--This div contains the page for Addition Question 3-->
+  <div data-role="header">
+   <button class="MenuExit" onclick="window.location.href='#Menu'" style="background-color: red; color: whitesmoke;">Main Menu</button>
+ 		<!--Button that allows the user to return to the main menu page--> 
+	  <h1>Question 3</h1>
+   <button class="power" style="background-color: green; color: whitesmoke;">Power Saving</button>
+	  <!--Button that allows the user to lower the screen brightness, thus saving battery power-->
+  </div>
+
+  <div data-role="main" class="ui-content">
+	  	<h2>Score: <div class="addScore">0</div> </h2>
 	  	<h2 style="color: black; text-align: center;">Question?</h2>
   
-		<button id="AddQ2Op1" style="background-color: lightblue;">Option1</button>
-	  	<button id="AddQ2Op2" style="background-color: lightblue;">Option2</button>
-	  	<button id="AddQ2Op3" style="background-color: lightblue;">Option3</button>
-	  	<button id="AddQ2Op4" style="background-color: lightblue;">Option4</button>
-    	<!--Buttons to answer addition question 2-->
+		<button id="AddQ2Op1" onclick="AddQ3Op1()" style="background-color: lightblue;"></button>
+	  	<button id="AddQ2Op2" onclick="AddQ3Op2()" style="background-color: lightblue;"></button>
+	  	<button id="AddQ2Op3" onclick="AddQ3Op3()" style="background-color: lightblue;"></button>
+	  	<button id="AddQ2Op4" onclick="AddQ3Op4()" style="background-color: lightblue;"></button>
+    	<!--Buttons to answer addition question 3-->
   </div>
   <div data-role="footer">
 

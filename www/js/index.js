@@ -49,6 +49,13 @@ var additionQuestions = {
     			"option2": "300",
     			"option3": "280",
 				"option4": "340"
+		},
+		
+		"addQues2": {
+    			"option1": "549.51",
+    			"option2": "560.69",
+    			"option3": "560.71",
+				"option4": "556.82"
 		}
 	}
 
@@ -60,18 +67,23 @@ additionGet = localStorage.getItem("additionSet");
 addObj = JSON.parse(additionGet);
 
 
-$(document).on('deviceready', deviceReady); 
+$(document).on('deviceready', addQuesDeviceReady); 
 				   	   
-function deviceReady() { 
+function addQuesDeviceReady() { 
 		$("#AddQ1Op1").text(addObj.addQues1.option1);
 		$("#AddQ1Op2").text(addObj.addQues1.option2);
 		$("#AddQ1Op3").text(addObj.addQues1.option3);
 		$("#AddQ1Op4").text(addObj.addQues1.option4);
+		
+		$("#AddQ2Op1").text(addObj.addQues2.option1);
+		$("#AddQ2Op2").text(addObj.addQues2.option2);
+		$("#AddQ2Op3").text(addObj.addQues2.option3);
+		$("#AddQ2Op4").text(addObj.addQues2.option4);
 };
 //Retrieving data
 
 
-
+//*********Addition Scoring**********
 var additionScore = 0;
 
 function addPlusScore(){
@@ -92,14 +104,39 @@ function addPlusScore(){
 	window.location.href='#AdditionQ2';
 }
 
-function AddQ1Op3(){ 
+	function AddQ1Op3(){ 
 	$("#AddQ1Op3").css("color", "red");
 	navigator.vibrate(2000); 
 	window.location.href='#AdditionQ2';
 }
 
-function AddQ1Op4(){ 
+	function AddQ1Op4(){ 
 	$("#AddQ1Op4").css("color", "red");
 	navigator.vibrate(2000); 
 	window.location.href='#AdditionQ2';
+}
+
+	function AddQ2Op1(){ 
+	$("#AddQ2Op1").css("color", "red");
+	navigator.vibrate(2000); 
+	window.location.href='#AdditionQ3';
+}
+	function AddQ2Op2(){ 
+	$("#AddQ2Op2").css("color", "red");
+	navigator.vibrate(2000); 
+	window.location.href='#AdditionQ3';
+}
+
+	function AddQ2Op3() {
+	$("#AddQ2Op3").css("color", "green");
+	navigator.notification.beep(1); 
+	addPlusScore();
+	$(".addScore").text(additionScore);
+	window.location.href='#AdditionQ3';
+	}
+
+	function AddQ2Op4(){ 
+	$("#AddQ2Op4").css("color", "red");
+	navigator.vibrate(2000); 
+	window.location.href='#AdditionQ3';
 }
