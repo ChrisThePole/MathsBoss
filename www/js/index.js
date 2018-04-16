@@ -56,6 +56,13 @@ var additionQuestions = {
     			"option2": "560.69",
     			"option3": "560.71",
 				"option4": "556.82"
+		},
+	
+		"addQues3": {
+    			"option1": "6/8",
+    			"option2": "6/7",
+    			"option3": "5/7",
+				"option4": "2/11"
 		}
 	}
 
@@ -79,6 +86,11 @@ function addQuesDeviceReady() {
 		$("#AddQ2Op2").text(addObj.addQues2.option2);
 		$("#AddQ2Op3").text(addObj.addQues2.option3);
 		$("#AddQ2Op4").text(addObj.addQues2.option4);
+	
+		$("#AddQ3Op1").text(addObj.addQues3.option1);
+		$("#AddQ3Op2").text(addObj.addQues3.option2);
+		$("#AddQ3Op3").text(addObj.addQues3.option3);
+		$("#AddQ3Op4").text(addObj.addQues3.option4);
 };
 //Retrieving data
 
@@ -116,6 +128,7 @@ function addPlusScore(){
 	window.location.href='#AdditionQ2';
 }
 
+
 	function AddQ2Op1(){ 
 	$("#AddQ2Op1").css("color", "red");
 	navigator.vibrate(2000); 
@@ -139,4 +152,30 @@ function addPlusScore(){
 	$("#AddQ2Op4").css("color", "red");
 	navigator.vibrate(2000); 
 	window.location.href='#AdditionQ3';
+}
+
+
+	function AddQ3Op1(){ 
+	$("#AddQ3Op1").css("color", "red");
+	navigator.vibrate(2000); 
+	window.location.href='#AdditionResult';
+}
+	function AddQ3Op2(){ 
+	$("#AddQ3Op2").css("color", "green");
+	navigator.notification.beep(1); 
+	addPlusScore();
+	$(".addScore").text(additionScore);
+	window.location.href='#AdditionResult';
+	}
+
+	function AddQ3Op3() {
+	$("#AddQ3Op3").css("color", "red");
+	navigator.vibrate(2000); 
+	window.location.href='#AdditionResult';
+	}
+
+	function AddQ3Op4(){ 
+	$("#AddQ3Op4").css("color", "red");
+	navigator.vibrate(2000); 
+	window.location.href='#AdditionResult';
 }
