@@ -174,7 +174,7 @@ function addPlusScore(){
 	navigator.vibrate(2000); 
 	window.location.href='#AdditionResult';
 	}
-+
+
 	function AddQ3Op4(){ 
 	$("#AddQ3Op4").css("color", "red");
 	navigator.vibrate(2000); 
@@ -189,6 +189,13 @@ function addPlusScore(){
 		//additionHighScoreGet = localStorage.getItem("additionHighScoreSet");
 		additionScore = 0;
 		//$(".AddHighScore").text(additionHighScore);
-		document.getElementsByClassName("AddHighScore").innerHTML = localStorage.getItem("additionHighScoreSet");
-		
+		//document.getElementsByClassName("AddHighScore").innerHTML = localStorage.getItem("additionHighScoreSet");	
 }
+
+	$(document).on('deviceready', addHighScoreDeviceReady); 
+				   	   
+	function addHighScoreDeviceReady() { 
+		document.getElementsByClassName("AddHighScore").innerHTML = localStorage.getItem("additionHighScoreSet");
+};
+//Retrieving data
+
