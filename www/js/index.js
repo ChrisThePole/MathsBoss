@@ -97,6 +97,7 @@ function addQuesDeviceReady() {
 
 //*********Addition Scoring**********
 var additionScore = 0;
+var additionHighScore = 0;
 
 function addPlusScore(){
 	additionScore++;
@@ -173,7 +174,7 @@ function addPlusScore(){
 	navigator.vibrate(2000); 
 	window.location.href='#AdditionResult';
 	}
-
++
 	function AddQ3Op4(){ 
 	$("#AddQ3Op4").css("color", "red");
 	navigator.vibrate(2000); 
@@ -182,10 +183,12 @@ function addPlusScore(){
 
 	function addHighScore(){ 
 		window.location.href='#AdditionMenu';
-		var additionHighScore = additionScore;
+		additionHighScore = additionScore;
 		$(".AddHighScore").text(additionHighScore);
 		localStorage.setItem("additionHighScoreSet", additionHighScore); //Storing data
-		additionGet = localStorage.getItem("additionHighScoreSet");
+		//additionHighScoreGet = localStorage.getItem("additionHighScoreSet");
 		additionScore = 0;
+		//$(".AddHighScore").text(additionHighScore);
+		document.getElementsByClassName("AddHighScore").innerHTML = localStorage.getItem("additionHighScoreSet");
 		
 }
