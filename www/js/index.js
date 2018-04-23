@@ -183,7 +183,9 @@ function addPlusScore(){
 
 	function addHighScore(){ 
 		window.location.href='#AdditionMenu';
-		additionHighScore = additionScore;
+		if (additionScore > additionHighScore){
+			additionHighScore = additionScore;
+		}
 		$(".AddHighScore").text(additionHighScore);
 		localStorage.setItem("additionHighScoreSet", additionHighScore); //Storing data
 		//additionHighScoreGet = localStorage.getItem("additionHighScoreSet");
