@@ -179,3 +179,13 @@ function addPlusScore(){
 	navigator.vibrate(2000); 
 	window.location.href='#AdditionResult';
 }
+
+	function addHighScore(){ 
+		window.location.href='#AdditionMenu';
+		var additionHighScore = additionScore;
+		$(".AddHighScore").text(additionHighScore);
+		localStorage.setItem("additionHighScoreSet", additionHighScore); //Storing data
+		additionGet = localStorage.getItem("additionHighScoreSet");
+		additionScore = 0;
+		
+}
