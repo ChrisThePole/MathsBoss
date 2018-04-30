@@ -1,3 +1,16 @@
+/* References:
+Adobe (2018) Adobe PhoneGap Build. [Online] Available at: https://build.phonegap.com/docs/config-xml. [Accessed 3rd February 2018].
+
+jQuery Foundation (2018) jQuery Mobile. [Online] Available at: http://jquerymobile.com/. [Accessed 3rd February 2018].
+
+Apache Cordova (2018) Dialogs - Apache Cordova. [Online] Available at: https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-dialogs/. [Accessed 26th February 2018].
+
+Apache Cordova (2018) Vibration - Apache Cordova. [Online] Available at: https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-vibration/. [Accessed 26th February 2018].
+
+Fiscal-Cliff (2018) GitHub - fiscal-cliff/phonegap-plugin-brightness: A phonegap 3.x plugin for brightness control within android and ios. [Online] Available at: https://github.com/fiscal-cliff/phonegap-plugin-brightness. [Accessed 1st March 2018].
+*/
+
+
 //**********Exit Application Dialog**********
 function exitDialog() {
 	navigator.notification.confirm(
@@ -33,7 +46,7 @@ function powerSaving(value) {
 		} //This function sets the screen brightness to a value of either 1 or 0.5
 
 /*The above two functions were inspired by and use a plugin from:
-Fiscal-Cliff (2018) GitHub - fiscal-cliff/phonegap-plugin-brightness: A phonegap 3.x plugin for brightness control within android and ios. [Online] Available at: https://github.com/fiscal-cliff/phonegap-plugin-brightness. [Accessed 1st March 2018].
+Fiscal-Cliff (2018, Online).
 
 The function below extends the code used above:
 */	
@@ -312,7 +325,7 @@ subGet = localStorage.getItem("subSet");
 subObj = JSON.parse(subGet);
 //Retrieves the question data from local storage and parses it back from a string to an object
 
-$(document).on('deviceready', subQuesDeviceReady); //calls the "addQuesDeviceReady()" function when the device is ready
+$(document).on('deviceready', subQuesDeviceReady); //calls the "subQuesDeviceReady()" function when the device is ready
 				   	   
 function subQuesDeviceReady() { 
 		$("#SubQ1Op1").text(subObj.subQues1.option1);
@@ -507,20 +520,3 @@ function subHighScoreDeviceReady() {
 		document.getElementsByClassName("SubHighScore").innerHTML = localStorage.getItem("subHighScoreSet");
 };
 //Retrieving data
-
-
-
-
-
-
-/* References:
-Adobe (2018) Adobe PhoneGap Build. [Online] Available at: https://build.phonegap.com/docs/config-xml. [Accessed 3rd February 2018].
-
-jQuery Foundation (2018) jQuery Mobile. [Online] Available at: http://jquerymobile.com/. [Accessed 3rd February 2018].
-
-Apache Cordova (2018) Dialogs - Apache Cordova. [Online] Available at: https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-dialogs/. [Accessed 26th February 2018].
-
-Apache Cordova (2018) Vibration - Apache Cordova. [Online] Available at: https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-vibration/. [Accessed 26th February 2018].
-
-Fiscal-Cliff (2018) GitHub - fiscal-cliff/phonegap-plugin-brightness: A phonegap 3.x plugin for brightness control within android and ios. [Online] Available at: https://github.com/fiscal-cliff/phonegap-plugin-brightness. [Accessed 1st March 2018].
-*/
