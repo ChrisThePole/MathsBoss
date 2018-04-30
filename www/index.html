@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Application Lifecycle Test</title>
+    <title>Maths Boss</title>
 
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 	<script src="jquery-mobile/jquery-1.8.3.min.js" type="text/javascript"></script>
@@ -12,7 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body onload="addQuesDeviceReady()" onload="addHighScoreDeviceReady()"> 
+<body onload="addQuesDeviceReady()" onload="addHighScoreDeviceReady()" onload="subQuesDeviceReady()" onload="subHighScoreDeviceReady()"> 
 <!--Calls the "addQuesDeviceReady" and "addHighScoreDeviceReady" functions as soon as the page has loaded-->
 <div data-role="page" id="Menu"> <!--This div contains the main menu page-->
   <div data-role="header">
@@ -27,9 +27,9 @@
 	  	<h2 style="color: black; text-align: center;">Choose a Topic to Practise</h2>
   
 	  	<button id="MenuButton1" onclick="window.location.href='#AdditionMenu'" style="background-color: lightblue;">Addition</button>
-    	<button id="MenuButton2" style="background-color: lightblue;">Subtraction</button>
-    	<button id="MenuButton3" style="background-color: lightblue;">Multiplication</button>
-	  	<button id="MenuButton4" style="background-color: lightblue;">Division</button>
+    	<button id="MenuButton2" onclick="window.location.href='#SubMenu'" style="background-color: lightblue;">Subtraction</button>
+    	<button id="MenuButton3" onclick="window.location.href='#MulMenu'" style="background-color: lightblue;">Multiplication</button>
+	  	<button id="MenuButton4" onclick="window.location.href='#DivMenu'" style="background-color: lightblue;">Division</button>
 	  	<!--Buttons to select the maths topic area to answer questions on-->
 	  
   </div>
@@ -155,6 +155,124 @@
 	  	<h2>You Scored: <div class="addScore">0</div> </h2>
   
 		<button class="MenuExit" onclick="addHighScore()" style="background-color: lightblue;">Return to Addition Menu</button>
+    	<!--Buttons to return the user to the main menu-->
+  </div>
+  <div data-role="footer">
+
+  </div>
+</div>	
+	
+	
+<div data-role="page" id="SubMenu"> <!--This div contains the subtraction menu page-->
+  <div data-role="header">
+   <button class="MenuExit" onclick="window.location.href='#Menu'" style="background-color: red; color: whitesmoke;">Main Menu</button>
+ 		<!--Button that allows the user to return to the main menu page--> 
+	  <h1>Subtraction</h1>
+   <button class="power" style="background-color: green; color: whitesmoke;">Power Saving</button>
+	  <!--Button that allows the user to lower the screen brightness, thus saving battery power-->
+  </div>
+
+  <div data-role="main" class="ui-content">
+	  	<h2>High Score: <div class="SubHighScore">0</div> </h2>
+	  	<h2 style="color: black; text-align: center;">Are you ready?</h2>
+  
+		<button id="SubStartButton" onclick="window.location.href='#SubQ1'" style="background-color: lightblue;">Start Questions</button>
+    	<!--Button to start the subtraction questions-->
+  </div>
+  <div data-role="footer">
+
+  </div>
+</div>	
+
+<div data-role="page" id="SubQ1"> <!--This div contains the page for Subtraction Question 1-->
+  <div data-role="header">
+   <button class="MenuExit" onclick="window.location.href='#Menu'" style="background-color: red; color: whitesmoke;">Main Menu</button>
+ 		<!--Button that allows the user to return to the main menu page--> 
+	  <h1>Question 1</h1>
+   <button class="power" style="background-color: green; color: whitesmoke;">Power Saving</button>
+	  <!--Button that allows the user to lower the screen brightness, thus saving battery power-->
+  </div>
+
+  <div data-role="main" class="ui-content">
+	  <h2>Score: <div class="subScore">0</div> </h2>
+	  	<h2 style="color: black; text-align: center;">What is 263 - 142?</h2>
+  
+		<button id="SubQ1Op1" onclick="SubQ1Op1()" style="background-color: lightblue;"></button>
+	  	<button id="SubQ1Op2" onclick="SubQ1Op2()" style="background-color: lightblue;"></button>
+	  	<button id="SubQ1Op3" onclick="SubQ1Op3()" style="background-color: lightblue;"></button>
+	  	<button id="SubQ1Op4" onclick="SubQ1Op4()" style="background-color: lightblue;"></button>
+    	<!--Buttons to answer subtraction question 1-->
+  </div>
+  <div data-role="footer">
+
+  </div>
+</div>
+	
+<div data-role="page" id="SubQ2"> <!--This div contains the page for Subtraction Question 2-->
+  <div data-role="header">
+   <button class="MenuExit" onclick="window.location.href='#Menu'" style="background-color: red; color: whitesmoke;">Main Menu</button>
+ 		<!--Button that allows the user to return to the main menu page--> 
+	  <h1>Question 2</h1>
+   <button class="power" style="background-color: green; color: whitesmoke;">Power Saving</button>
+	  <!--Button that allows the user to lower the screen brightness, thus saving battery power-->
+  </div>
+
+  <div data-role="main" class="ui-content">
+	  <h2>Score: <div class="subScore">0</div> </h2>
+	  	<h2 style="color: black; text-align: center;">If I buy a chocolate bar for £1.15 and I pay
+			with a £5 note, how much change will I get?</h2>
+  
+		<button id="SubQ2Op1" onclick="SubQ2Op1()" style="background-color: lightblue;"></button>
+	  	<button id="SubQ2Op2" onclick="SubQ2Op2()" style="background-color: lightblue;"></button>
+	  	<button id="SubQ2Op3" onclick="SubQ2Op3()" style="background-color: lightblue;"></button>
+	  	<button id="SubQ2Op4" onclick="SubQ2Op4()" style="background-color: lightblue;"></button>
+    	<!--Buttons to answer subtraction question 2-->
+  </div>
+  <div data-role="footer">
+
+  </div>
+</div>
+
+	
+<div data-role="page" id="SubQ3"> <!--This div contains the page for Subtraction Question 3-->
+  <div data-role="header">
+   <button class="MenuExit" onclick="window.location.href='#Menu'" style="background-color: red; color: whitesmoke;">Main Menu</button>
+ 		<!--Button that allows the user to return to the main menu page--> 
+	  <h1>Question 3</h1>
+   <button class="power" style="background-color: green; color: whitesmoke;">Power Saving</button>
+	  <!--Button that allows the user to lower the screen brightness, thus saving battery power-->
+  </div>
+
+  <div data-role="main" class="ui-content">
+	  <h2>Score: <div class="subScore">0</div> </h2>
+	  	<h2 style="color: black; text-align: center;">What is 8/11 - 3/11?</h2>
+  
+		<button id="SubQ3Op1" onclick="SubQ3Op1()" style="background-color: lightblue;"></button>
+	  	<button id="SubQ3Op2" onclick="SubQ3Op2()" style="background-color: lightblue;"></button>
+	  	<button id="SubQ3Op3" onclick="SubQ3Op3()" style="background-color: lightblue;"></button>
+	  	<button id="SubQ3Op4" onclick="SubQ3Op4()" style="background-color: lightblue;"></button>
+    	<!--Buttons to answer subtraction question 3-->
+  </div>
+  <div data-role="footer">
+
+  </div>
+</div>
+	
+	
+<div data-role="page" id="SubtractionResult"> <!--This div contains the page for Subtraction Result-->
+  <div data-role="header">
+   <button class="MenuExit" style="background-color: red; color: whitesmoke;">Main Menu</button>
+ 		<!--Button that allows the user to return to the main menu page--> 
+	  <h1>Subtraction Result</h1>
+   <button class="power" style="background-color: green; color: whitesmoke;">Power Saving</button>
+	  <!--Button that allows the user to lower the screen brightness, thus saving battery power-->
+  </div>
+
+  <div data-role="main" class="ui-content">
+	  	<h2 style="color: black; text-align: center;">Well Done!</h2>
+	  	<h2>You Scored: <div class="subScore">0</div> </h2>
+  
+		<button class="MenuExit" onclick="subHighScore()" style="background-color: lightblue;">Return to Subtraction Menu</button>
     	<!--Buttons to return the user to the main menu-->
   </div>
   <div data-role="footer">
